@@ -1,0 +1,15 @@
+Flask
+Flask-SQLAlchemy
+Flask-Migrate
+watchdog
+psycopg2-binary
+Flask-JWT-Extended
+flask-restful
+flask-restx
+bcrypt
+requests
+pillow
+Werkzeug
+flask-cors
+python-dotenv
+boto3
