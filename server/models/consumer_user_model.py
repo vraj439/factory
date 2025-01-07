@@ -1,4 +1,4 @@
-from server.extensions import db
+from extensions import db
 import uuid
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.dialects.postgresql import ENUM

@@ -1,4 +1,4 @@
-from server.extensions import db
+from extensions import db
 import uuid
 
 class TechnicalDrawing(db.Model):

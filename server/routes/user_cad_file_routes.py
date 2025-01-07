@@ -1,7 +1,7 @@
 from flask import request
 from flask_restx import Namespace, Resource, fields
 from flask_jwt_extended import jwt_required, get_jwt_identity
-from server.utils import (
+from utils import (
     get_access_token,
     check_bucket_exists,
     create_bucket,
@@ -10,8 +10,8 @@ from server.utils import (
     translate_file,
     get_cad_metadata
 )
-from server.models import UserCADFile
-from server.extensions import db
+from models import UserCADFile
+from extensions import db
 import os
 import requests
 import time

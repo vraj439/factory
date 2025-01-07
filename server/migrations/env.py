@@ -2,8 +2,8 @@ import logging
 from logging.config import fileConfig
 
 from alembic import context
-from server.app import create_app
-from server.models import consumer_user_model
+from app import create_app
+from models import consumer_user_model
 
 # Import your app factory function
 # from your_flask_app import create_app  # Replace with the correct path to your app factory function

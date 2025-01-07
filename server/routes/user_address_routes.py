@@ -1,8 +1,8 @@
 from flask_restx import Namespace, Resource, fields
 from flask_jwt_extended import jwt_required, get_jwt_identity
 from flask import request
-from server.models import UserAddress
-from server.extensions import db
+from models import UserAddress
+from extensions import db
 
 user_address_ns = Namespace("addresses", description="User Address-related operations", security="Bearer")
 

@@ -1,8 +1,8 @@
 from flask_restx import Namespace, Resource, fields
 from flask_jwt_extended import jwt_required, get_jwt_identity
 from flask import request
-from server.models import TechnicalDrawing, UserCADFile
-from server.extensions import db
+from models import TechnicalDrawing, UserCADFile
+from extensions import db
 
 technical_drawings_ns = Namespace("technical-drawings", description="Technical Drawing-related operations", security="Bearer")
 

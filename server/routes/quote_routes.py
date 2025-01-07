@@ -1,8 +1,8 @@
 from flask_restx import Namespace, Resource, fields
 from flask_jwt_extended import jwt_required, get_jwt_identity
 from flask import request
-from server.models import QuoteRequest
-from server.extensions import db
+from models import QuoteRequest
+from extensions import db
 import uuid
 
 quote_ns = Namespace("quotes", description="Quote Request-related operations", security="Bearer")

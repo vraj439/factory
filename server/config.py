@@ -3,7 +3,7 @@ from datetime import timedelta
 from dotenv import load_dotenv
 import boto3
 import json
-from server.utils import get_ssm_parameter
+from utils import get_ssm_parameter
 
 # Load .env file for local development
 load_dotenv()

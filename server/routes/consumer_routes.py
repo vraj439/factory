@@ -2,9 +2,9 @@ import bcrypt
 from flask import request, make_response
 from flask_restx import Namespace, Resource, fields
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
-from server.models import ConsumerUser
-from server.extensions import db
-from server.constants import industry_enum
+from models import ConsumerUser
+from extensions import db
+from constants import industry_enum
 
 consumer_ns = Namespace('consumer', description='Consumer operations', security="Bearer")
 

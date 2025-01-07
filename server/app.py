@@ -1,11 +1,11 @@
 import os
 import logging
-from server.config import config_by_name
-from server.extensions import db, migrate, jwt
+from config import config_by_name
+from extensions import db, migrate, jwt
 from flask import Flask
 from flask_restx import Api
 from sqlalchemy import text
-from server.routes import (
+from routes import (
   consumer_routes,
   supplier_routes,
   quote_routes,

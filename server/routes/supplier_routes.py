@@ -2,8 +2,8 @@ import bcrypt
 from flask import request, make_response
 from flask_restx import Namespace, Resource, fields
 from flask_jwt_extended import create_access_token
-from server.models import SupplierUser
-from server.extensions import db
+from models import SupplierUser
+from extensions import db
 
 supplier_ns = Namespace('supplier', description='Supplier operations', security="Bearer")
 
